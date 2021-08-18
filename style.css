@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    height: 100px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: red;
+    display: inline-block;
+}
+
+li a::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: blue;
+}
+
+li a:hover::after{
+  color: green;
+  width: 100%;
+}
+
+main{
+    margin: 30px 0; 
+    display: flex;
+    /* border: 1px solid blue; */
+    align-items: center;
+    justify-content: center;
+}
+
+.content-left{
+    width: 30%;
+    margin: 0 20px;
+}
+main h1{
+    font-size: 25px;
+    color: blue;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+main h2{
+    font-size: 25px;
+     letter-spacing: 8px;
+     font-weight: 800px;
+    text-transform: uppercase;
+}
+
+main p{
+    font-size: 14px;
+    line-height: 2em;
+    margin: 30px 0;
+}
+
+.cta{
+    padding: 15px 30px;
+    background-color: cadetblue;
+    color: white;
+    /* outline: none; */
+    border: none;
+    border-radius: 30px;
+}
+
+.hero-img{
+    max-width: 670px;
+    height: auto;
+}
+
+.signup-btn{
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: white;
+    /* outline: none; */
+    border: none;
+    border-radius: 30px;
+}
